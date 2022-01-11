@@ -43,7 +43,7 @@ class DocgiaController{
                 else {
                     $TT= "Thêm mới thất bại";
                 }
-                header("Location: index.php?controller=docgia&action=detail&tt=$TT");
+                header("Location: index.php?controller=docgia&action=detail");
                 exit();
             }
 
@@ -96,7 +96,7 @@ class DocgiaController{
                 else {
                     $TT= "Sửa thất bại";
                 }
-                header("Location: index.php?controller=docgia&action=detail&tt=$TT");
+                header("Location: index.php?controller=docgia&action=detail");
                 exit();
             }
 
@@ -120,7 +120,7 @@ class DocgiaController{
             //báo lỗi
             $TT = "Xóa bản ghi thất bại";
         }
-        header("Location: index.php?controller=docgia&action=detail&tt=$TT");
+        header("Location: index.php?controller=docgia&action=detail");
         exit();
     }
 }
